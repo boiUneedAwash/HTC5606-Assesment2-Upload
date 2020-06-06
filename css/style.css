@@ -1,0 +1,108 @@
+body{
+    background-color: orange;
+    font-family: "SansSerif";
+    font-size: 14px;
+}
+
+#header img{
+    width: 100%;
+    height: 100%;
+}
+
+#footer{
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    font-style: normal;
+}
+
+#headingStyle{
+    font-style: normal ;
+    color: black;
+    font-family: "sans-serif";
+    font-size: xx-large;
+    text-align: center;
+    position: absolute;
+    top: 100px;
+}
+
+/**
+content starts
+ */
+#content div{
+    display: inline-block;
+    vertical-align: top;
+}
+#leftDiv{
+    width: 300px;
+    height: 300px;
+    overflow:hidden;
+}
+
+#leftDiv img{
+    width: 300px;
+    height:300px;
+    position:relative;
+    z-index:-1;
+}
+
+#middle{
+    width: 600px;
+}
+
+.product{
+    width: 190px;
+    display: inline-block;
+}
+
+.product img{
+    width: 100%;
+    height: 150px;
+}
+
+.product input{
+    width: 30px;
+}
+
+#rightDiv{
+    width: 200px;
+}
+/** content ends */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

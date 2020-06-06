@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Care Products</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+</head>
+<header>
+    <div>
+        <ul>
+            <li>0800 456 3589</li>
+            <li>Mon - Sat 10:00 - 7:00</li>
+        </ul>
+    </div>
+    <nav>
+        <ul id="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://www.unitec.ac.nz/">Unitec</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+<div>
+        <img id="leftDivPic" src="img/others/leftdividerparrotfeathers.jpg" width="500px" height="800px"/>
+</div>
+    <div id="middle">
+        <div class="product">
+            <p><img src="img/careproducts/leatherdogcollar.jpg" width="200px" length="200px"></p>
+            <p>Price: $24.99</p>
+            <p>
+                <input id="collarQty" placeholder="qty" type="number">
+                <button id="addCollar" onclick="addProductToCart(this.id)">Add to cart</button>
+            </p>
+        </div>
+        <div class="product">
+            <p><img src="img/careproducts/fleaflea.jpg" width="200px" length="200px"></p>
+            <p>Price: $7.99</p>
+            <p>
+                <input id="fleaQty" placeholder="qty" type="number">
+                <button id="addFlea" onclick="addProductToCart(this.id)">
+                    Add to cart
+                </button>
+            </p>
+        </div>
+        <div class="product">
+            <p><img src="img/careproducts/cat-dog-kennel.jpg" width="200px" length="200px"></p>
+            <p>Price: $199.99</p>
+            <p>
+                <input id="kennelQty" placeholder="qty" type="number">
+                <
+                <button id="addKennel" onclick="addProductToCart(this.id)">
+                    Add to cart
+                </button>
+            </p>
+        </div>
+    </div>
+    <div id="rightDiv">
+        <h2>Cart</h2>
+        <button id="checkOut" onclick="invoice()">Check out</button>
+    </div>
+</div>
+
+<!-- The Invoice -->
+<div class="modal" id="myModal">
+
+    <!-- Invoice content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="invoicePlace">Invoice</div>
+    </div>
+
+</div>
+<footer id="footer">
+    <p>Copyright &copy; 2020 Unitec</p>
+</footer>
+</body>
+</html>
