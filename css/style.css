@@ -34,14 +34,14 @@ content starts
     vertical-align: top;
 }
 #leftDiv{
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height:700px;
     overflow:hidden;
 }
 
 #leftDiv img{
-    width: 300px;
-    height:300px;
+    width: 400px;
+    height:700px;
     position:relative;
     z-index:-1;
 }
@@ -105,4 +105,28 @@ content starts
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+#navigation li{
+    display: inline;
+}
+
+#navigation a{
+    text-decoration: none;
+    color: black;git
+}
+nav ul{
+    display: inline-block;
+}
+nav {
+    width: 100%;
+    background-color: yellow;
+}
+#dateAndTime li{
+    display: inline;
+}
+
+#dateAndTime {
+    position: absolute;
+    right: 10px;
 }
